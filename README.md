@@ -137,11 +137,14 @@ By default, the script runs at random time (between 03:00 and 04:00) on Saturday
 ```bash
 sudo systemctl edit pihole-updatelists.timer
 ```
+You can refer to example entries in here:
+https://wiki.archlinux.org/index.php/Systemd/Timers
+
+Like:
 ```
 [Timer]
 RandomizedDelaySec=5m
-OnCalendar=
-OnCalendar=Sat *-*-* 00:00:00
+OnCalendar=*-*-* 4:00:00
 ```
 
 ### Running custom commands before/after scheduled run

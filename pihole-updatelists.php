@@ -822,6 +822,9 @@ if (!empty($config['ADLISTS_URL'])) {
         };
 
         foreach ($adlists as $address) {
+
+            // replace junk in address 
+            $address = str_ireplace(array('0.0.0.0', '127.0.0.1', ' ', "\t"), '', $address);
             // Check 'borrowed' from `scripts/pi-hole/php/groups.php` - 'add_adlist'
             if (!filter_var($address, FILTER_VALIDATE_URL) || preg_match('/[^a-zA-Z0-9$\\-_.+!*\'(),;\/?:@=&%]/', $address) !== 0) {
                 printAndLog('Invalid: ' . $address . PHP_EOL);

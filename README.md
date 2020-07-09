@@ -154,7 +154,7 @@ sudo systemctl edit pihole-updatelists.service
 ```
 [Service]
 Type=oneshot
-ExecStartPre=echo "before"
+ExecStartPre=sudo pihole-updatelists -u
 ExecStartPost=echo "after"
 ```
 

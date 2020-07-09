@@ -11,7 +11,7 @@
 #define('GITHUB_LINK', 'https://github.com/jacklul/pihole-updatelists');
 define('GITHUB_LINK', 'https://github.com/ckouris84/pihole-updatelists/tree/siruok-continue-parse');
 #define('GITHUB_LINK_RAW', 'https://raw.githubusercontent.com/jacklul/pihole-updatelists/master');
-define('GITHUB_LINK_RAW', 'https://raw.githubusercontent.com/ckouris84/pihole-updatelists/tree/siruok-continue-parse');
+define('GITHUB_LINK_RAW', 'https://raw.githubusercontent.com/ckouris84/pihole-updatelists/siruok-continue-parse');
 
 /**
  * Check for required stuff

@@ -140,6 +140,9 @@ sudo systemctl edit pihole-updatelists.timer
 You can refer to example entries in here:
 https://wiki.archlinux.org/index.php/Systemd/Timers
 
+Or here:
+https://www.certdepot.net/rhel7-use-systemd-timers/
+
 Like:
 ```
 [Timer]

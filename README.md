@@ -17,6 +17,7 @@ Without **systemd** you will have to take care of scheduled run of this script y
 This will install this script globally as `pihole-updatelists` and add systemd service and timer.
 
 ```bash
+#wget -O - https://raw.githubusercontent.com/jacklul/pihole-updatelists/master/install.sh | sudo bash
 wget -O - https://raw.githubusercontent.com/sirouk/pihole-updatelists/master/install.sh | sudo bash
 ```
 
@@ -132,10 +133,18 @@ If one of the lists fails to download nothing will be affected for that list typ
 ### Changing the schedule
 
 By default, the script runs at random time (around 04:00am), to change it you'll have to override [timer unit](https://www.freedesktop.org/software/systemd/man/systemd.timer.html) file:
+
  
 ```bash
 sudo systemctl edit pihole-updatelists.timer
 ```
+You can refer to example entries in here:
+https://wiki.archlinux.org/index.php/Systemd/Timers
+
+Or here:
+https://www.certdepot.net/rhel7-use-systemd-timers/
+
+Like:
 ```
 [Timer]
 RandomizedDelaySec=5m

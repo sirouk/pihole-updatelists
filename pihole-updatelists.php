@@ -8,8 +8,10 @@
  * @link    https://github.com/jacklul/pihole-updatelists
  */
 
-define('GITHUB_LINK', 'https://github.com/jacklul/pihole-updatelists');
-define('GITHUB_LINK_RAW', 'https://raw.githubusercontent.com/jacklul/pihole-updatelists/master');
+#define('GITHUB_LINK', 'https://github.com/jacklul/pihole-updatelists');
+define('GITHUB_LINK', 'https://github.com/ckouris84/pihole-updatelists/tree/siruok-continue-parse');
+#define('GITHUB_LINK_RAW', 'https://raw.githubusercontent.com/jacklul/pihole-updatelists/master');
+define('GITHUB_LINK_RAW', 'https://raw.githubusercontent.com/ckouris84/pihole-updatelists/siruok-continue-parse');
 
 /**
  * Check for required stuff
@@ -134,17 +136,17 @@ function loadConfig($options = [])
         'CONFIG_FILE'         => '/etc/pihole-updatelists.conf',
         'GRAVITY_DB'          => '/etc/pihole/gravity.db',
         'LOCK_FILE'           => '/var/lock/pihole-updatelists.lock',
-        'LOG_FILE'            => '',
-        'ADLISTS_URL'         => '',
-        'WHITELIST_URL'       => '',
+        'LOG_FILE'            => '/etc/pihole-updatelists.log',
+        'ADLISTS_URL'         => 'https://raw.githubusercontent.com/ckouris84/pihole-updatelists/siruok-continue-parse/adslist.list',
+        'WHITELIST_URL'       => 'https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt https://raw.githubusercontent.com/raghavdua1995/DNSlock-PiHole-whitelist/master/whitelist.list',
         'REGEX_WHITELIST_URL' => '',
-        'BLACKLIST_URL'       => '',
-        'REGEX_BLACKLIST_URL' => '',
+        'BLACKLIST_URL'       => 'https://raw.githubusercontent.com/ckouris84/pihole-updatelists/siruok-continue-parse/blacklist.list',
+        'REGEX_BLACKLIST_URL' => 'https://raw.githubusercontent.com/mmotti/pihole-regex/master/regex.list',
         'COMMENT'             => 'Managed by pihole-updatelists',
         'GROUP_ID'            => 0,
         'REQUIRE_COMMENT'     => true,
         'UPDATE_GRAVITY'      => true,
-        'VACUUM_DATABASE'     => false,
+        'VACUUM_DATABASE'     => true,
         'VERBOSE'             => false,
         'DEBUG'               => false,
         'DOWNLOAD_TIMEOUT'    => 60,
@@ -742,7 +744,8 @@ if (!empty($config['ADLISTS_URL'])) {
                     $contents .= PHP_EOL . $listContents;
                 } else {
                     $contents = false;
-                    break;
+                    #break;
+                    continue; // just continue
                 }
             }
         }
@@ -819,6 +822,7 @@ if (!empty($config['ADLISTS_URL'])) {
         };
 
         foreach ($adlists as $address) {
+
             // Check 'borrowed' from `scripts/pi-hole/php/groups.php` - 'add_adlist'
             if (!filter_var($address, FILTER_VALIDATE_URL) || preg_match('/[^a-zA-Z0-9$\\-_.+!*\'(),;\/?:@=&%]/', $address) !== 0) {
                 printAndLog('Invalid: ' . $address . PHP_EOL);
@@ -895,7 +899,8 @@ if (!empty($config['ADLISTS_URL'])) {
 
         $dbh->commit();
     } else {
-        printAndLog(' ' . parseLastError() . PHP_EOL, 'ERROR');
+        #printAndLog(' ' . parseLastError() . PHP_EOL, 'ERROR');
+        printAndLog(' ' . parseLastError() . PHP_EOL, 'ERROR', TRUE); // just log, keep going
 
         $stat['errors']++;
     }

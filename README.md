@@ -132,7 +132,7 @@ If one of the lists fails to download nothing will be affected for that list typ
 
 ### Changing the schedule
 
-By default, the script runs at random time (between 03:00 and 04:00) on Saturday, to change it you'll have to override [timer unit](https://www.freedesktop.org/software/systemd/man/systemd.timer.html) file:
+By default, the script runs at random time (around 04:00) on Saturday, to change it you'll have to override [timer unit](https://www.freedesktop.org/software/systemd/man/systemd.timer.html) file:
  
 ```bash
 sudo systemctl edit pihole-updatelists.timer

@@ -12,7 +12,7 @@ command -v php >/dev/null 2>&1 || { echo "This script requires PHP-CLI to run, i
 
 SPATH=$(dirname $0)
 #REMOTE_URL=https://raw.githubusercontent.com/jacklul/pihole-updatelists/master
-REMOTE_URL=https://raw.githubusercontent.com/ckouris84/pihole-updatelists/siruok-continue-parse
+REMOTE_URL=https://raw.githubusercontent.com/sirouk/pihole-updatelists/master
 SYSTEMD=`pidof systemd >/dev/null && echo "1" || echo "0"`
 
 [ "$SYSTEMD" == 0 ] && echo "! Systemd not detected, will not install service unit files !"

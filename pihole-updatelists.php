@@ -9,9 +9,9 @@
  */
 
 #define('GITHUB_LINK', 'https://github.com/jacklul/pihole-updatelists');
-define('GITHUB_LINK', 'https://github.com/ckouris84/pihole-updatelists/tree/siruok-continue-parse');
+define('GITHUB_LINK', 'https://github.com/siruok/pihole-updatelists/tree/master');
 #define('GITHUB_LINK_RAW', 'https://raw.githubusercontent.com/jacklul/pihole-updatelists/master');
-define('GITHUB_LINK_RAW', 'https://raw.githubusercontent.com/ckouris84/pihole-updatelists/siruok-continue-parse');
+define('GITHUB_LINK_RAW', 'https://raw.githubusercontent.com/siruok/pihole-updatelists/master');
 
 /**
  * Check for required stuff
@@ -137,10 +137,10 @@ function loadConfig($options = [])
         'GRAVITY_DB'          => '/etc/pihole/gravity.db',
         'LOCK_FILE'           => '/var/lock/pihole-updatelists.lock',
         'LOG_FILE'            => '/etc/pihole-updatelists.log',
-        'ADLISTS_URL'         => 'https://raw.githubusercontent.com/ckouris84/pihole-updatelists/siruok-continue-parse/adslist.list',
+        'ADLISTS_URL'         => 'https://raw.githubusercontent.com/siruok/pihole-updatelists/master/adslist.list',
         'WHITELIST_URL'       => 'https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt https://raw.githubusercontent.com/raghavdua1995/DNSlock-PiHole-whitelist/master/whitelist.list',
         'REGEX_WHITELIST_URL' => '',
-        'BLACKLIST_URL'       => 'https://raw.githubusercontent.com/ckouris84/pihole-updatelists/siruok-continue-parse/blacklist.list',
+        'BLACKLIST_URL'       => 'https://raw.githubusercontent.com/siruok/pihole-updatelists/master/blacklist.list',
         'REGEX_BLACKLIST_URL' => 'https://raw.githubusercontent.com/mmotti/pihole-regex/master/regex.list',
         'COMMENT'             => 'Managed by pihole-updatelists',
         'GROUP_ID'            => 0,

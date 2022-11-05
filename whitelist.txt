@@ -1,3 +1,4 @@
+# FROM: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212/113
 sfdataservice.microsoft.com 
 fpdownload.adobe.com 
 entitlement.auth.adobe.com 
@@ -180,3 +181,100 @@ assets.adobedtm.com
 nexus.ensighten.com 
 tracking-protection.cdn.mozilla.net 
 v10.vortex-win.data.microsoft.com
+
+#Videos in weather.com
+v.w-x.co
+
+#Microsoft store needs this to open up
+storeedgefd.dsx.mp.microsoft.com
+dl.delivery.mp.microsoft.com
+geo-prod.do.dsp.mp.microsoft.com
+displaycatalog.mp.microsoft.com
+client.wns.windows.com
+storeedgefd.dsx.mp.microsoft.com
+tlu.dl.delivery.mp.microsoft.com
+
+# Minecraft Realms Plus
+fp.msedge.net
+minecraftprod.rtep.msgamestudios.com
+
+# MSNBC video player
+snappytvpoc-vh.akamaihd.net
+
+# Facebook Messenger
+scontent-atl3-1.xx.fbcdn.net
+static.xx.fbcdn.net
+edge-chat.messenger.com
+video.xx.fbcdn.net
+
+# Microsoft Edge Browser
+msedge.api.cdp.microsoft.com
+
+
+# FROM: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212/157
+2.tlu.dl.delivery.mp.microsoft.com	
+4.tlu.dl.delivery.mp.microsoft.com	
+aad.cs.dds.microsoft.com	
+api.flightproxy.teams.microsoft.com	
+authsvc.teams.microsoft.com	
+browser.events.data.microsoft.com	
+browser.pipe.aria.microsoft.com	
+chatsvcagg.teams.microsoft.com	
+codepush.teams.microsoft.com	
+config.teams.microsoft.com	
+cp801.prod.do.dsp.mp.microsoft.com	
+csp.microsoft.com	
+devicelistenerprod.microsoft.com	
+edge.microsoft.com	
+emea.ng.msg.teams.microsoft.com	
+eu-v10.events.data.microsoft.com	
+eu-v20.events.data.microsoft.com	
+europe.cp.wd.microsoft.com	
+europe.smartscreen-prod.microsoft.com	
+europe.smartscreen.microsoft.com	
+fe3cr.delivery.mp.microsoft.com	
+geover.prod.do.dsp.mp.microsoft.com	
+go.microsoft.com	
+go.trouter.teams.microsoft.com	
+has.spserv.microsoft.com	
+ic3.events.data.microsoft.com	
+login.microsoftonline.com	
+mamservice.manage.microsoft.com	
+northeurope-prod-4.notifications.teams.microsoft.com	
+officecdnmac.microsoft.com
+officeclient.microsoft.com	
+presence.teams.microsoft.com	
+r.manage.microsoft.com	
+self.events.data.microsoft.com	
+settings-win.data.microsoft.com	
+teams.events.data.microsoft.com	
+teams.microsoft.com	
+tsfe.trafficshaping.dsp.mp.microsoft.com	
+whiteboard.microsoft.com	
+winatp-gw-neu.microsoft.com	
+www.microsoft.com
+teams.office.com	
+nexusrules.officeapps.live.com	
+config.fp.measure.office.com	
+upload.fp.measure.office.com	
+substrate.office.com	
+outlook.office.com	
+officeclient.microsoft.com	
+outlook.office365.com	
+ecs.office.com	
+res-1.cdn.office.net	
+mrs-efz.ms-acdc.office.com	
+nleditor.osi.office.net	
+outlook.ha.office365.com	
+clients.config.office.net	
+outlook-1.cdn.office.net	
+statics.teams.cdn.office.net	
+officecdnmac.microsoft.com	
+officeci-mauservice.azurewebsites.net	
+emea.pptservicescast.officeapps.live.com
+nexusrules.officeapps.live.com	
+login.live.com	
+storage.live.com	
+g.live.com
+emea.pptservicescast.officeapps.live.com
+## this will be aggregated and updated soon

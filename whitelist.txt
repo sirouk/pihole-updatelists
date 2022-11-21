@@ -278,3 +278,7 @@ storage.live.com
 g.live.com
 emea.pptservicescast.officeapps.live.com
 ## this will be aggregated and updated soon
+
+
+# Discord media 2022-11-20
+media.discordapp.net

@@ -282,3 +282,11 @@ emea.pptservicescast.officeapps.live.com
 
 # Discord media 2022-11-20
 media.discordapp.net
+
+# Route
+m.stripe.com
+events.mapbox.com
+data.pendo.io
+jssdkcdns.mparticle.com
+identity.mparticle.com
+cdn.bizible.com

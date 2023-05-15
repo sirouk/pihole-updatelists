@@ -293,3 +293,4 @@ cdn.bizible.com
 audio-ak-spotify-com.akamaized.net
 spclient.wg.spotify.com 
 apresolve.spotify.com 
+dealer.spotify.com

@@ -72,8 +72,6 @@ s{1..5}.symcb.com
 officeclient.microsoft.com 
 www.google-analytics.com 
 ssl.google-analytics.com 
-spclient.wg.spotify.com 
-apresolve.spotify.com 
 weeklyad.target.com 
 m.weeklyad.target.com 
 upload.facebook.com 
@@ -290,3 +288,8 @@ data.pendo.io
 jssdkcdns.mparticle.com
 identity.mparticle.com
 cdn.bizible.com
+
+# Spotify
+audio-ak-spotify-com.akamaized.net
+spclient.wg.spotify.com 
+apresolve.spotify.com 
